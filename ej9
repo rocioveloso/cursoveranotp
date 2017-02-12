@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std; 
+
+int main(){
+	int L1, L2, L3;
+	cout<<"Ingrese tres valores: ";
+	cin>>L1>>L2>>L3;
+	cout<<endl;
+	
+	if((L1<L2+L3)&&(L2<L1+L3)&&(L3<L1+L2)){
+		cout<<"Forman un triangulo!!!";
+	}else{
+		cout<<"No forman un triangulo :(";
+	}
+	
+	
+	return 0;
+}
