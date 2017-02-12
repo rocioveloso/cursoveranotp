@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	int a, quinta, resto, septimo;
+	cout<<"Ingrese un numero entero: ";
+	cin>>a;
+	cout<<endl;
+	
+	quinta=a/5;
+	cout<<"La quinta parte de "<<a<<" es: "<<quinta<<endl;
+	
+	resto=a-(quinta*5);
+	cout<<"El resto de la division es: "<<resto<<endl;
+	
+	septimo=quinta/7;
+	cout<<"La septima parte de "<<quinta<<" es: "<<septimo<<endl;
+	
+	return 0;
+}
