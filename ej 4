@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	int a, diam;
+	cout<<"Ingrese el radio del circulo: ";
+	cin>>a;
+	cout<<endl<<"--------------------------------------------------------"<<endl;
+	diam=2*a;
+	
+	cout<<"El diametro del circulo es "<<diam<<" cm"<<endl;
+	
+	cout<<"La circunferencia es de "<<diam*3,14 <<" cm"<<endl;
+	
+	cout<<"El area del circulo es de "<<3,14*(a*a)<<" cm"<<endl;
+	
+	return 0;
+}
