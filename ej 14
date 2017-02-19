@@ -6,6 +6,8 @@ int main(){
 	int n, i;
 	int mayor, menor, pma, pme;
 	int vec[n];
+	cout<<"Ingrese n: "<<endl;
+	cin>>n;
 	
 	for(i=1; i<n; i++){
 		if(i=1){
@@ -24,3 +26,7 @@ int main(){
 			}
 		}
 	}
+	cout<<"El mayor es "<<mayor<<" y esta en la posicion "<<pma<<endl;
+	cout<<"El menor es "<<menor<<" y esta en la posicion "<<pme<<endl;
+	return 0;
+}
