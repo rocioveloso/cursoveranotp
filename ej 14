@@ -1,0 +1,26 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	int n, i;
+	int mayor, menor, pma, pme;
+	int vec[n];
+	
+	for(i=1; i<n; i++){
+		if(i=1){
+			mayor=vec[i];
+			menor=vec[i];
+			pma=i;
+			pme=i;
+		}else{
+			if(vec[i]>mayor){
+				mayor=vec[i];
+				pma=i;
+			}
+			if(vec[i]<menor){
+				menor=vec[i];
+				pme=i;				
+			}
+		}
+	}
