@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+ 
+int main(){
+	int v, vmax=0, sum, vmin, c, d, cmax, pmax;
+	cout<<"Ingrese un conjunto de valores positivos(0 para dividir y neg para finalizar): "<<endl;
+	cin>>v;
+	while(v>=0){
+		while(v!=0){
+			sum=sum+v;
+			c++;
+			if(v>vmax){
+				vmax=v;
+				cmax=d+1;
+				pmax=c;
+			}
+			if(v<vmin){
+				vmin=v;
+				cin>>v;
+			}
+		}
+		if(c==0){
+			cout<<"El subconjunto no tiene valores."<<endl;
+			cin>>v;
+		}else{
+			d++;
+			cout<<"El promedio del subconjunto "<<d<<" es "<<sum/c<<endl;
+			cout<<"El valor minimo del subconjunto "<<d<<" es "<<vmin<<endl;
+			cin>>v;
+		}
+	}
+	if(d==0){
+		cout<<"No hay subconjuntos";
+	}else{
+		cout<<"Hay "<<d<<" subconjuntos"<<endl;
+		cout<<"El valor maximo es "<<vmax<<" del subconjunto "<<cmax<<" con la posicion "<<pmax<<endl;
+	}
+	
+	return 0;
+
+} 
