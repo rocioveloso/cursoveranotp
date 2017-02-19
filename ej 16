@@ -1,0 +1,50 @@
+#include<iostream>
+
+using namespace std;
+
+
+int main(){
+	int n, a;
+	int vec[n];
+	int maxneg=-n, infpos=n, prom;
+	
+	for(int i=0; i<n; i++){
+		while(vec[i]!=0){
+			if(vec[i]>maxneg){
+				maxneg=vec[i];
+			}	
+			if(vec[i]<infpos){
+				infpos=vec[i];
+			}
+			prom=prom+vec[i];
+			
+
+		}
+	}
+	
+	cout<<"El maximo negativo es "<<maxneg<<endl;
+	cout<<"El minimo positivo es "<<infpos<<endl;
+	if(maxneg<(-17,3)&&infpos<26,9){
+		a=(maxneg*-1)-infpos;
+		if(a>0){
+			cout<<"En minimo en el rango -17,3 y 26,9 es "<<infpos<<endl;
+		}else{
+			if(a<0){
+				cout<<"En minimo en el rango -17,3 y 26,9 es "<<maxneg<<endl;
+			}else{
+				cout<<"No hay minimo en el rango.";
+			}
+		}
+	}else{
+		if(maxneg<(-17,3)){
+				cout<<"En minimo en el rango -17,3 y 26,9 es "<<maxneg<<endl;
+		}else{
+			if(infpos<26,9){
+				cout<<"En minimo en el rango -17,3 y 26,9 es "<<infpos<<endl;
+			}else{
+				cout<<"No hay minimo en el rango.";
+			}
+		}
+	}
+	cout<<"El promedio de todos los valores es "<<(prom/n)<<endl;
+	return 0;
