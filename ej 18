@@ -1,0 +1,71 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+	 int i, m, num, numant, c, colig, numig, alt, d, calt,j ;
+	 char col, colant;
+   cout<< "Ingresar cantidad de pares: ";
+ 	 cin>>m;
+ 	 cout<<"Ingresar color y numero de cada par (r para rojo, n para negro):";
+ 	 cin>>col>>num;
+	 colant=col;
+   numant=num;
+   int prinum=num, antcero[m];
+ 	 if(num==0){
+   			c++;
+   	}
+ 
+   	for(i=1; i<m; i++){
+  		cin>>col>>num;
+  		
+  		if(num==0){
+  		c++;
+  		}
+   		antcero[d]=numant;
+   		d++;
+   }
+    cout<<"El numero 0 salio "<<c<<" veces."<<endl;
+ 
+ 
+	if(col=='n'&&colant=='n'){
+ 		colig++;
+ 	}
+ 	
+ 	if(num==numant){
+		numig++;
+	}
+	
+ 	if(col!=colant){
+ 		alt++;
+ 		if(alt>calt){
+			 calt=alt;
+		}
+	}else{
+		alt=0;
+	}
+	
+ 	cout << "El color negro se repitio " << colig << " veces."<<endl;
+ 	cout << "El mismo numero se repitio " << numig<< " veces."<<endl;
+
+ 
+ 
+	if (prinum!=0){
+		for (j = 0; j < c; j++){
+			cout<<antcero[j];
+		}
+	}else{
+		for(j = 0; j < c - 1; j++){
+			cout<<antcero[j];
+		}
+	}
+	
+	cout<<"Los numeros anteriores al cero fueron: "<<antcero[j]<<endl;
+ 
+	cout<<"El mayor numero de veces seguidas que salieron alternados los colores rojo y negro fue "<<calt<<endl;
+
+	return 0;
+}
+
+	
