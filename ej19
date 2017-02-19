@@ -1,0 +1,44 @@
+#include<iostream>
+#include<stdio.h>
+
+using namespace std;
+
+//El ejercicio está resuelto como si ya tuviera el archivo Buque.dat con los datos.
+
+struct Buque{
+	int id;
+	int peso;
+	int puerto;
+};
+
+int main(){
+
+	FILE*f=fopen("Buque.dat", "rt");
+	Buque a;
+	int tpeso=0, mayor=0, idma, x=0, y=0, z=0;
+	fread(&a, sizeof(a), 1, f);
+	while(!feof(f)){
+		tpeso=tpeso+a.peso;
+		if(a.peso>mayor){
+			mayor=a.peso;
+			idma=a.id;
+		}
+		if(a.puerto=='1'){
+			x++;
+		}else{
+			if(a.puerto=='2'){
+				y++;
+			}else{
+				z++;
+			}
+		}		
+			
+		fread(&a, sizeof(a), 1, f);
+		
+	}
+	cout<<"El peso total que debe trasladar es de "<<tpeso<<"kg. "<<endl;
+	cout<<"El contenedor de mayor peso es el "<<a.id<<endl;
+	cout<<"Cantidad de contenedores por puerto:"<<endl;
+	cout<<"Puerto 1: "<<x<<endl;
+	cout<<"Puerto 2: "<<y<<endl;
+	cout<<"Puerto 3: "<<z<<endl;
