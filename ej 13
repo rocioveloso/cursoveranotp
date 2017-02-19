@@ -1,0 +1,18 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	int M, d, c=0;
+	cout<<"Ingrese M: ";
+	cin>>M;
+	
+	for(int i=0; i<(M*3); i++){
+		c=c+M;
+		
+		if(c%3==0&&c%5!=0){
+	
+			cout<<c<<endl;
+		}
+	}
+}
