@@ -1,0 +1,20 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	int dia, mes, anio, AAAAMMDD;
+	int a, m;
+	cout<<"Ingrese dia, mes y año: ";
+	cin>>dia>>mes>>anio;
+	cout<<endl;
+	
+	a=anio*10000;
+	m=mes*100;
+	
+	AAAAMMDD=a+m+dia;
+	
+	cout<<AAAAMMDD;
+	
+	return 0;
+}
