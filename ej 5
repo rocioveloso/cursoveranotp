@@ -1,0 +1,31 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	int x, a, b, c, d, e,f , g, h;
+	cout<<"Ingrese un numero de 5 digitos: ";
+	cin>>x;
+	cout<<endl<<endl;
+	
+	a=x/10000;
+	cout<<a<<endl;
+	
+	b=x-(a*10000);
+	c=b/1000;
+	cout<<c<<endl;
+	
+	d=b-(c*1000);
+	e=d/100;
+	cout<<e<<endl;
+	
+	f=d-(e*100);
+	g=f/10;
+	cout<<g<<endl;
+	
+	h=f-(g*10);
+	cout<<h<<endl;
+	
+	return 0;
+	
+}
