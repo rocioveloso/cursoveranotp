@@ -1,0 +1,39 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	int d1, m1, a1;
+	int d2, m2, a2;
+	cout<<"Ingrese dos fechas(dia, mes y anio): "<<endl;
+	cin>>d1>>m1>>a1;
+	cin>>d2>>m2>>a2;
+	
+	if(a1==a2){
+		if(m1==m2){
+			if(d1==d2){
+				cout<<"Las fechas ingresadas son las mismas"<<endl;
+			}else{
+				if(d1<d2){
+					cout<<"La mas reciente es la segunda fecha"<<endl;
+				}else{
+					cout<<"La mas reciente es la primer fecha"<<endl;
+				}
+			}
+		}else{
+			if(m1<m2){
+				cout<<"La mas reciente es la segunda fecha"<<endl;
+			}else{
+				cout<<"La mas reciente es la primer fecha"<<endl;
+			}
+		}
+	}else{
+		if(a1<a2){
+			cout<<"La mas reciente es la segunda fecha"<<endl;
+		}else{
+			cout<<"La mas reciente es la primer fecha"<<endl;
+		}
+	}
+		
+	return 0;
+}
