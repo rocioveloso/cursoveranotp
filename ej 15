@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+ 
+int main(){
+	int fecha, fechama, fechame;
+	string nombre, nombrema, nombreme;
+	
+	cout<<"Ingrese nombre: ";
+	cin>>nombre;
+	cout<<"Ingrese fecha: ";
+	cin>>fecha;
+	
+	while(nombre!="Fin"){
+		if(fecha>fechama){
+			fechama=fecha;
+			nombrema=nombre;
+		}
+		if(fecha<fechame){
+			fechame=fecha;
+			nombreme=nombre;
+		}
+	cout<<"Ingrese nombre: ";
+	cin>>nombre;
+	cout<<"Ingrese fecha: ";
+	cin>>fecha;		
+	}
+	
+	cout<<"La persona con mayor edad es "<<nombrema<<endl;
+	cout<<"La persona con menor edad es "<<nombreme<<endl;
+	
+	return 0;
+} 
